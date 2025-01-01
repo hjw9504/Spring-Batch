@@ -36,6 +36,7 @@ public class JobConfig {
     public Tasklet firstJob() {
         return (contribution, chunkContext) -> {
             log.info("First Job");
+            log.info("Job Completed");
             return RepeatStatus.FINISHED;
         };
     }
